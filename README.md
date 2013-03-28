@@ -12,13 +12,17 @@ Usage
 Take the Classes and put them in your library folder
 
 Create an instance of Openweathermap_Map.
+
 Feed it with latitude and longitude
+
 Call the Google-Response function, you get a proper xml response, as if the server would answer
 
 Example
 ==============
 $openweather = new Openweathermap_Map();
+
 $openweather->setLatLon($lat, $lng);
+
 $api = simplexml_load_string($openweather->getGoogleWeatherResponse());
 
 
